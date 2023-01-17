@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About:)</title>      <!--setting about tab title-->
+    <link rel="icon" href="/img/weather.png">     <!--setting weather tab icon-->
+
+    <link rel="stylesheet" href="/css/style.css">      
+    <script src="/js/clientapp.js" > </script>
+</head>
+<body>
+
+    <div class="main-content">
+        {{>header}} <!-- calling header from partial header.hbs-->
+        <img class="portrait" src="/img/spidy.jpg" alt="spiderman image">
+        
+        {{errormsg}}
+    </div>
+    
+   
+    {{!-- <h1>About Handlebar</h1> --}}
+    {{>footer}}          <!-- calling footer from partial footer.hbs-->
+</body>
+</html>

@@ -5,6 +5,7 @@ const fs = require('fs');
 const myApp = expr ();
 const geocode = require('./myutils/geocode');
 const weatherReport = require('./myutils/forecast');
+const port = process.env.PORT || 3000
 //const forecast = require('./myutils/forecast')
 
 //setting up path for express config after changing views to templates
@@ -171,6 +172,6 @@ myApp.get('*', (req, res) => {
     });
 })
 
-myApp.listen ('3000', () => {
+myApp.listen (port, () => {
     console.log('web server started at port 3000');
 }) 
